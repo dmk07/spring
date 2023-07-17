@@ -6,5 +6,13 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/dmk61/OneDrive/Desktop/springjars/core/com.springsource.org.apache.commons.logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dmk61/OneDrive/Desktop/springjars/core/com.springsource.org.apache.log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dmk61/OneDrive/Desktop/springjars/core/jmxtools-1.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dmk61/OneDrive/Desktop/springjars/core/org.springframework.asm-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dmk61/OneDrive/Desktop/springjars/core/org.springframework.beans-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dmk61/OneDrive/Desktop/springjars/core/org.springframework.context-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dmk61/OneDrive/Desktop/springjars/core/org.springframework.core-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dmk61/OneDrive/Desktop/springjars/core/org.springframework.expression-3.0.1.RELEASE-A.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
