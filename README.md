@@ -15,3 +15,4 @@
 # constructor inj
  ## while passing depndent obj to target class by constructor inj don't declare name="date". just pass ref in <con>.
  
+# Use Generic methods for better develope to avoid typecasting.
