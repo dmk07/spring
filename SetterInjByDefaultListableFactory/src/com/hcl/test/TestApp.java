@@ -18,8 +18,11 @@ public class TestApp {
 		
 		reader.loadBeanDefinitions("com/hcl/config/Config.xml");
 		
-		 Object obj=dbf.getBean("wm");
-		WishMessage wm=(WishMessage)obj;
+//		 Object obj=dbf.getBean("wm");
+//		WishMessage wm=(WishMessage)obj;
+
+		WishMessage wm=dbf.getBean("wm",WishMessage.class);
+		
 		String msg=wm.Wish("Dipak");
 		
 		System.out.print(msg);
