@@ -7,7 +7,7 @@
    
    <bean id="dt" class="java.util.Date"/>
    
-   <bean id="wmg" class="com.hcl.beans.WishMessage">
+   <bean id="wm" class="com.hcl.beans.WishMessage">
 		<constructor-arg ref="dt"></constructor-arg>
 		</bean>
    

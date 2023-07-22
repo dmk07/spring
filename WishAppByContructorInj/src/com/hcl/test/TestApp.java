@@ -14,14 +14,14 @@ public class TestApp {
 	public static void main(String[] args) throws ClassNotFoundException, ReflectiveOperationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 	
 		FileSystemResource file=new FileSystemResource("src/com/hcl/config/Config1.xml");
-	
 		XmlBeanFactory bean=new XmlBeanFactory(file);
 	
-		Object obj = bean.getBean("wmg");
+//		Object obj = bean.getBean("wmg");
+//		WishMessage wm=(WishMessage)obj;
 
-		WishMessage wm=(WishMessage)obj;
+		WishMessage wmg=bean.getBean("wm", WishMessage.class);
 		
-		String msg=wm.Wish("Dipak");
+		String msg=wmg.Wish("Dipak");
 		
 		System.out.print(msg);
 	
