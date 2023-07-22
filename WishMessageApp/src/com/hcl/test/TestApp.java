@@ -9,17 +9,25 @@ public class TestApp {
 
 	public static void main(String[] args) {
 	
-		FileSystemResource file=new FileSystemResource("src/com/hcl/config/Config.xml");
-	
-		XmlBeanFactory bean=new XmlBeanFactory(file);
-		
-		Object obj=bean.getBean("wm");
-		
-		WishMessage wm=(WishMessage)obj;
-		String msg=wm.Wish("Dipak");
+		FileSystemResource file = new FileSystemResource("src/com/hcl/config/Config.xml");
+
+		XmlBeanFactory bean = new XmlBeanFactory(file);
+
+		//casting problem
+//		Object obj = bean.getBean("wm");
+//		WishMessage wm = (WishMessage) obj;
+//		String msg = wm.Wish("Dipak");
+
+		WishMessage wmg= bean.getBean("wm", WishMessage.class);
+
+		String msg=wmg.Wish("dipak");
 		
 		System.out.print(msg);
-	
+
+		
+		
+		
+		
 	}
 
 }
