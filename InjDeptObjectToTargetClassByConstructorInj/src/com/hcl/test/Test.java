@@ -14,7 +14,10 @@ public class Test {
 		
         BeanFactory factory=new XmlBeanFactory(file);  
           
-        Employee s=(Employee)factory.getBean("e");  
+        //Employee s=(Employee)factory.getBean("e");  
+        
+        Employee s=factory.getBean("e", Employee.class);
+        
         s.show();  
           
     }  
