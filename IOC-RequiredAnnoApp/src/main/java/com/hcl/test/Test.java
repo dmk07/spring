@@ -10,7 +10,7 @@ public class Test {
 
 		ClassPathXmlApplicationContext cx = new ClassPathXmlApplicationContext("com/hcl/config/config.xml");
 
-		Robot robo = cx.getBean("robo", Robot.class);
+		Robot robo = cx.getBean("com.hcl.beans.Robot", Robot.class);
 
 		System.out.print(robo);
 

@@ -10,7 +10,7 @@ public class Robot {
 	public String getId() {
 		return id;
 	}
-	
+	@Required
 	public void setId(String id) {
 		this.id = id;
 	}
@@ -19,6 +19,7 @@ public class Robot {
 		return name;
 	}
 	
+	@Required
 	public void setName(String name) {
 		this.name = name;
 	}

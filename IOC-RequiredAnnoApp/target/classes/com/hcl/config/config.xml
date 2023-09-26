@@ -15,16 +15,18 @@
 						http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
 						http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.2.xsd">
 
-	<bean id="robo" class="com.hcl.beans.Robot">
+	<bean class="com.hcl.beans.Robot">
 
 
 		<property name="id" value="1001" />
-<!--		<property name="name" value="chitti" />-->
-<!--		<property name="lab" value="rajni"/>-->
+		<property name="name" value="chitti"/>
+<!--		<property name="lab" value="rajni" />-->
 		<property name="price" value="1504" />
 
 	</bean>
-<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"></bean>
+
+	<bean
+		class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"></bean>
 
 
 </beans>
