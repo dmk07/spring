@@ -19,7 +19,7 @@
 
 
 		<property name="id" value="1001" />
-		<property name="name" value="chitti"/>
+		<property name="name" value="chitti" />
 		<property name="lab" value="rajni" />
 		<property name="price" value="1504" />
 
