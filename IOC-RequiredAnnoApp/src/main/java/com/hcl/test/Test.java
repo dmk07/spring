@@ -10,9 +10,13 @@ public class Test {
 
 		ClassPathXmlApplicationContext cx = new ClassPathXmlApplicationContext("com/hcl/config/config.xml");
 
-		Robot robo = cx.getBean("com.hcl.beans.Robot", Robot.class);
+		Robot robo1= cx.getBean("com.hcl.beans.Robot#1", Robot.class);
+		Robot robo2= cx.getBean("com.hcl.beans.Robot#2", Robot.class);
 
-		System.out.print(robo);
+		//#n index based ranking
+		
+		System.out.println(robo1);
+		System.out.println(robo2);
 
 	}
 

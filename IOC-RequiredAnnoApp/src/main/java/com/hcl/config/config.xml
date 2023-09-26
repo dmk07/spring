@@ -20,8 +20,26 @@
 
 		<property name="id" value="1001" />
 		<property name="name" value="chitti"/>
-<!--		<property name="lab" value="rajni" />-->
+		<property name="lab" value="rajni" />
 		<property name="price" value="1504" />
+
+	</bean>
+	<bean class="com.hcl.beans.Robot">
+
+
+		<property name="id" value="1001" />
+		<property name="name" value="chitti"/>
+		<property name="lab" value="rajni" />
+		<property name="price" value="1504" />
+
+	</bean>
+	<bean class="com.hcl.beans.Robot">
+
+
+		<property name="id" value="1002" />
+		<property name="name" value="babu"/>
+		<property name="lab" value="dipak" />
+		<property name="price" value="1542" />
 
 	</bean>
 
