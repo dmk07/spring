@@ -10,7 +10,7 @@ public class DTDC implements Courier {
 	public String delivery(int oid) {
 		
 		
-		return "Your product id"+oid+"is delivered by DTDC services";
+		return "Your product id"+ oid +"is delivered by DTDC services";
 	}
 
 }
