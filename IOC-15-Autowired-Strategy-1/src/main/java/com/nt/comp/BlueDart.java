@@ -4,7 +4,6 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 @Component("bDart")
-@Lazy
 public final class BlueDart implements Courier {
 	
 	public BlueDart() {

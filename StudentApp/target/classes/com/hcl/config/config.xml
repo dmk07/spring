@@ -16,19 +16,13 @@
 						http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.2.xsd">
 
 	<!--	dependent class-->
-	<bean id="addr" class="com.hcl.beans.Address" primary="true" >
-		<property name="homeNumber" value="101"></property>
-		<property name="locationMark" value="satyam mall"></property>
-		<property name="city" value="Pune"></property>
-		</bean>
+	<bean id="addr" class="com.hcl.beans.Address" primary="true" />
 
 	<!--target class-->
 	<bean id="stud" class="com.hcl.beans.Student">
-		
+
 	</bean>
 
 
-	<context:component-scan base-package="com.hcl.beans" />
-
-
+	<context:annotation-config/>
 </beans>

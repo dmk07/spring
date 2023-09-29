@@ -12,13 +12,9 @@ public class Test {
 		
 		ClassPathXmlApplicationContext ctx=new ClassPathXmlApplicationContext("com/hcl/config/config.xml");
 		
-		
-		
-		
-		
 		Student stud=ctx.getBean("stud",Student.class);
 		
-		System.out.print(stud);
+		System.out.print(stud.toString());
 		
 	}
 

@@ -8,38 +8,16 @@ import org.springframework.stereotype.Component;
 public class Student {
 
 	
-	@Autowired
-	@Qualifier("addr")
+	@Autowired()
 	private Address addr;
 	
-	private String sname;
-	private String sclass;
+	private String sname="Dipak";
+	private String sclass="CS";
 	
-
-	public String getSname() {
-		return sname;
-	}
-
-	public void setSname(String sname) {
-		this.sname = sname;
-	}
-
-	public String getSclass() {
-		return sclass;
-	}
-
-	public void setSclass(String sclass) {
-		this.sclass = sclass;
-	}
-
-	public Address getAddr() {
-		return addr;
-	}
-
-	public void setAddr(Address addr) {
-		this.addr = addr;
-	}
-
+	
+	
+	
+	
 	@Override
 	public String toString() {
 		return "Student [sname=" + sname + ", sclass=" + sclass + ", addr=" + addr + "]";
