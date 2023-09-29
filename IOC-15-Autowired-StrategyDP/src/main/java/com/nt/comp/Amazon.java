@@ -6,35 +6,13 @@ import java.util.Random;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
-public final class Flipkart {
-	
-	@Autowired
-	@Qualifier("fFlight")
-	private  Courier courier;
-	
-/*	@Autowired
-	public Flipkart(@Qualifier("dtdc") Courier courier) {
-		this.courier=courier;
-		System.out.println("Flipkart:: 1-param constructor");
-	}
-	
-	@Autowired
-	@Qualifier("fFlight")
-	public  void   assign(Courier courier) {
-		System.out.println("Flipkart.assign(-)");
-		this.courier=courier;
-	}
-	
+public class Amazon {
+
 	@Autowired
 	@Qualifier("bDart")
-	public void setCourier(Courier courier) {
-		System.out.println("Flipkart.setCourier(-)");
-		 this.courier=courier;
-	} */
+	private  Courier courier;
 	
 	
-	
-	//b,method
 	public  String  shopping(String [] items, float[] prices) {
 		float billAmt=0.0f;
 		for(float p:prices)
@@ -45,6 +23,4 @@ public final class Flipkart {
 		  String msg=courier.deliver(oid);
 		  return  Arrays.toString(items)+" with prices"+Arrays.toString(prices)+" having billamt"+billAmt +" :::: "+ msg;
 	}
-	
-
 }

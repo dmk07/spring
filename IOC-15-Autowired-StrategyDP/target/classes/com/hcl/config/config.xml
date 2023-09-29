@@ -11,11 +11,11 @@
   <bean id="dtdc"  class="com.nt.comp.DTDC"  />
    <bean id="bDart"  class="com.nt.comp.BlueDart" />
   <bean id="fEx"  class="com.nt.comp.FedEx"/> 
-  <bean id="fFlight"  class="com.nt.comp.FirstFlight"/> 
+  <bean id="fFlight"  class="com.nt.comp.FirstFlight" primary="true"/> 
   
   
   <!-- Cfg target class -->
-  <bean id="fpkt"  class="com.nt.comp.Flipkart" />
+  <bean id="amzn"  class="com.nt.comp.Amazon" />
 
    <context:annotation-config/>
 
