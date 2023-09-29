@@ -6,10 +6,11 @@ import java.util.Random;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
-public class Amazon {
+
+public final class Amazon {
 
 	@Autowired
-	@Qualifier("bDart")
+	@Qualifier("fEx")
 	private  Courier courier;
 	
 	
