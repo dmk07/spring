@@ -13,8 +13,10 @@
    
   
   <!-- Cfg target class -->
-  <bean id="amzn"  class="com.hcl.comp.Amazon" />
-
+  <bean id="amzn"  class="com.hcl.comp.Amazon" primary="true" />
+  
+<!--<bean id="fpkt"  class="com.hcl.comp.Flipkart" />-->
+  
    <context:annotation-config/>
 
 </beans>
