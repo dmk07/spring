@@ -18,11 +18,11 @@
 	<!--	dependent class-->
 	<bean id="addr" class="com.hcl.beans.Address" primary="true" />
 
-	<!--target class-->
-	<bean id="stud" class="com.hcl.beans.Student">
-
-	</bean>
-
+	<!--dept class-->
+	<bean id="stud" class="com.hcl.beans.Student"/>
+	
+	<bean id="college" class="com.hcl.beans.College"></bean>
 
 	<context:annotation-config/>
+	
 </beans>
