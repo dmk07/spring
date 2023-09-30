@@ -6,7 +6,7 @@ import java.util.Random;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component("dtdc")
+@Component("")
 public class Flipkart implements Shopping{
 	
 	@Autowired

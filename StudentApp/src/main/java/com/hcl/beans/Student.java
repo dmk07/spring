@@ -17,7 +17,13 @@ public class Student {
 	
 	
 	
-	
+	public Student() {
+		System.out.print("0 par cons-studnet");
+	}
+
+
+
+
 	@Override
 	public String toString() {
 		return "Student [sname=" + sname + ", sclass=" + sclass + ", addr=" + addr + "]";

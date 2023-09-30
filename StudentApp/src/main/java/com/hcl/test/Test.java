@@ -13,9 +13,9 @@ public class Test {
 		
 		ClassPathXmlApplicationContext ctx=new ClassPathXmlApplicationContext("com/hcl/config/config.xml");
 		
-		College stud=ctx.getBean("college",College.class);
-		
-		System.out.print(stud.toString());
+//		College stud=ctx.getBean("college",College.class);
+//		
+//		System.out.print(stud.toString());
 		
 	}
 

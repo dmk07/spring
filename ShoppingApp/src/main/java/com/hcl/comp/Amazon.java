@@ -4,12 +4,14 @@ import java.util.Arrays;
 import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component("fedfx")
+@Component("amzn")
 public class Amazon implements Shopping {
 
 	@Autowired
+	@Qualifier("fedfx")
 	private Courier courier;
 	
 	
