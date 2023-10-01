@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 public class Amazon implements Shopping {
 
 	@Autowired
-	@Qualifier("fedfx")
+	@Qualifier("fd")
 	private Courier courier;
 	
 	@Value("${my.name}")
