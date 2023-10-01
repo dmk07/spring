@@ -17,8 +17,6 @@
   
 <!--<bean id="fpkt"  class="com.hcl.comp.Flipkart" />-->
   
- 	<context:property-placeholder location="com/hcl/commons/Info.properties"/>
- 	
    <context:annotation-config/>
 
 </beans>

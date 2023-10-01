@@ -4,24 +4,17 @@ import java.util.Arrays;
 import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-@Component("amzn")
-public class Amazon implements Shopping {
-
+@Component("")
+public class Flipkart implements Shopping{
+	
 	@Autowired
-	@Qualifier("fedfx")
 	private Courier courier;
-	
-	@Value("${my.name}")
-	private String name;
-	
+
 	@Override
 	public String buy(String[] items, float[] prices) {
 		
-		System.out.print(name);
 			float billAmt=0.0f;
 			for(float p:prices)
 				billAmt+=p;  // billAmt=billAmt+p
@@ -31,6 +24,7 @@ public class Amazon implements Shopping {
 			  String msg=courier.delivery(oid);
 			  return  Arrays.toString(items)+" with prices"+Arrays.toString(prices)+" having billamt"+billAmt +" :::: "+ msg;
 		}
-	}
+	
+	
 
-
+}
