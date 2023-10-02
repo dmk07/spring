@@ -12,7 +12,8 @@ import com.hcl.dto.CustomerDTO;
 public final class CustomerServiceImpl implements ICustomerService {
 
 	@Autowired
-	@Qualifier("custOraDAO")
+//	@Qualifier("custOraDAO")
+	@Qualifier("dao")
 	private ICustomerDAO dao;
 	
 	

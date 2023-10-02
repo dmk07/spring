@@ -3,16 +3,18 @@
 	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
 						http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
-	<bean id="ora"
+	<bean id="drds"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
-		<property name="url" value="jdbc:oracle:thin:@localhost:1521:xe" />
-		<property name="username" value="system" />
-		<property name="password" value="dipak" />
+		<property name="driverClassName" value="${jdbc.driver}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${db.user}" />
+		<property name="password" value="${db.password}" />
 	</bean>
 
 	<context:component-scan base-package="com.hcl"/>
 
+	<context:property-placeholder location="com/hcl/commons/info.properties" /> 
 	
+	<alias name="custOraDAO" alias="dao" />
 
 </beans>

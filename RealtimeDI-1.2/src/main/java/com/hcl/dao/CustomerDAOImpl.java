@@ -16,7 +16,6 @@ import com.hcl.bo.CustomerBO;
 public final class CustomerDAOImpl implements ICustomerDAO {
 	
 	@Autowired
-	@Qualifier("ora")
 	private DataSource ds;
 	private static final String INSERT_QUERY = "INSERT INTO CUSTOMER VALUES(CUSTID_SEQUENCE.NEXTVAL,?,?,?,?,?,?)";
 	Connection con=null;
